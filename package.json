@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Web Service for StreamCo Coding Challenge",
   "main": "./app/index.js",
+  "engines": {
+    "node": "0.12.x"
+  },
   "dependencies": {
     "body-parser": "^1.13.3",
     "express": "^4.13.3"
@@ -17,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://Invictus321@bitbucket.org/Invictus321/streamco.git"
+    "url": "https://github.com/Invictus321/dwalesstreamco.git"
   },
   "author": "David Wales",
   "license": "ISC"
