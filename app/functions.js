@@ -1,8 +1,12 @@
+
+
 // Take the list of shows and filter out the valid shows into a new list
-exports.parseRequest = function (body) {
+exports.processRequest = function (body) {
+
 	var payload = body.payload;
 	var responseBody = {};
 	responseBody.response = [];
+
 	for (var i = 0; i < payload.length; i++) {
 		var show = payload[i];
 		if (isValid(show)) {

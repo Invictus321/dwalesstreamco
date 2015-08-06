@@ -6,7 +6,7 @@ app.use(bodyParser.json());
 
 app.post('/', function(req, res) {
 	try {
-		var resContent = functions.parseRequest(req.body);
+		var resContent = functions.processRequest(req.body);
 		res.send(resContent);
 	} catch (ex) {
 		var resContent = functions.buildError();
