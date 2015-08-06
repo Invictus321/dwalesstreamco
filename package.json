@@ -6,9 +6,12 @@
   "dependencies": {
     "express": "^4.13.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "request": "^2.60.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -R spec ./test/test.js"
   },
   "repository": {
     "type": "git",
