@@ -30,6 +30,7 @@ var buildResponseShow = function (show) {
 	return responseShow;
 };
 
+// Create error json for response
 exports.buildError = function () {
 	var errorJson = {};
 	errorJson.error = "Could not decode request: JSON parsing failed";

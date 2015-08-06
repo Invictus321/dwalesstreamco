@@ -4,10 +4,6 @@ var functions = require('./functions.js');
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
-app.get('/', function(req, res) {
-	res.send("Hello Stan");
-});
-
 app.post('/', function(req, res) {
 	try {
 		var resContent = functions.parseRequest(req.body);

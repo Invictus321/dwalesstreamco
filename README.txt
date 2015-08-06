@@ -1,0 +1,15 @@
+This is a simple web service to filter shows into a simplified list.
+Only shows with DRM and at least one episode will be included.
+The returned list contains the Title, Slug and Image.
+
+To Install:
+
+	npm install
+
+To Run:
+	
+	npm start
+
+To Test:
+
+	npm test

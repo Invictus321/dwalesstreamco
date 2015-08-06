@@ -3,9 +3,10 @@ var request = require('request');
 var app = require('../app/index.js');
 var requestJson = require('./request.json');
 var responseJson = require('./response.json');
-var incorrectJson = require('./incorrectRequest.json');
+var functions = require('../app/functions.js');
 
 describe('StreamCo coding challenge web service', function () {
+
 	var options = {
 		uri: 'http://localhost:3000/',
 		method: 'POST',
@@ -30,10 +31,9 @@ describe('StreamCo coding challenge web service', function () {
 		options.json = "hello?isthisthingon?";
 		request(options, function(error, response, body) {
 			assert.equal(response.statusCode, 400);
-			var error = { error: 'Could not decode request: JSON parsing failed'};
+			var error = functions.buildError();
 			assert.deepEqual(body, error);
 			done();
 		});
 	});
 });
-
