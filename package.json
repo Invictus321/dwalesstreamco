@@ -1,9 +1,10 @@
 {
   "name": "streamco",
   "version": "1.0.0",
-  "description": "",
+  "description": "Web Service for StreamCo Coding Challenge",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.13.3",
     "express": "^4.13.3"
   },
   "devDependencies": {
@@ -11,6 +12,7 @@
     "request": "^2.60.0"
   },
   "scripts": {
+    "start": "node ./app/index.js",
     "test": "mocha -R spec ./test/test.js"
   },
   "repository": {
