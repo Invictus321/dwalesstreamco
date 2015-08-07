@@ -8,7 +8,7 @@ var functions = require('../app/functions.js');
 describe('StreamCo coding challenge web service', function () {
 
 	var options = {
-		uri: 'http://localhost/',
+		uri: 'http://localhost:3000/',
 		method: 'POST',
 		json: requestJson
 	};
